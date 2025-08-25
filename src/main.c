@@ -1,7 +1,6 @@
-#include <stdint.h>
-#include <stdio.h>
+#include "cpu.h"
 
 int main(int argc, char *argv[]) {
-    printf("Hello, World!\n");
+    run_program("/home/gustanol/projects/cpu-simulator/tests/program.bin", "rb");
     return 0;
 }
