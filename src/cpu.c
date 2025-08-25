@@ -6,7 +6,7 @@
 int run_program(const char *path, const char *mode) {
     /*
      * variables setup
-     */
+*/
     FILE *file;         // file variable
     struct cpu c;       // defining struct from cpu.h
     uint8_t buffer[16]; // creating an array to store 16 bytes to form memory in blocks
