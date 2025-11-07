@@ -44,32 +44,22 @@ variables and functions used in logic.
 
 > [!WARNING]
 > ensure that it respects the following structure:
-
       ```text
       [OPCODE] [OPERAND] 0xFF (at the final)
       ```
-
       ---
-
     - now, the main loop is defined to run while there's valid opcodes in memory
       array:
-
       - in each iteration, the opcode index is always be the current one
       (current `c.pc` value).
-
       - the `switch - case` structure is to verify which is the current opcode:
-
         - `0x01 - LOAD`: catches the value of `c.memory[c.pc]` and use it as an
         index of `memory` array to define `acc` value.
-
         - `0x02 - LOADI`: instead of pass an address as the operand, we can pass
           a value immediately.
-
         - `0x03 - STORE`: stores a value in `c.memory[c.pc]` using `c.acc`.
-
         - `0x04 - OUT`: prints the value of a memory index passed as the
         operand.
-
         - `0xFF - HILT`: stops the loop.
 
 ---
