@@ -40,15 +40,18 @@ variables and functions used in logic.
       - the code is using an [`example file`](./tests/program.bin). You can
       change it for another one!
 
-      ---
+---
 
 > [!WARNING]
 > ensure that it respects the following structure:
-      ```text
-      [OPCODE] [OPERAND] 0xFF (at the final)
-      ```
-      ---
-    - now, the main loop is defined to run while there's valid opcodes in memory
+
+```text
+[OPCODE] [OPERAND] 0xFF (at the final)
+```
+
+---
+    
+  - now, the main loop is defined to run while there's valid opcodes in memory
       array:
       - in each iteration, the opcode index is always be the current one
       (current `c.pc` value).
