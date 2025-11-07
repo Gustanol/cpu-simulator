@@ -42,8 +42,8 @@ variables and functions used in logic.
 
       ---
 
-      > [!WARNING]
-      > ensure that it respects the following structure:
+> [!WARNING]
+> ensure that it respects the following structure:
 
       ```text
       [OPCODE] [OPERAND] 0xFF (at the final)
